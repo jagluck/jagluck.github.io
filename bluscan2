@@ -1,0 +1,56 @@
+package com.amazon.alexa.avs.wakeword;
+
+import tinyb.*;
+import java.util.*;
+
+import com.amazon.alexa.avs.bluetooth.BeaconAdvertEventHandler;
+import com.amazon.alexa.avs.bluetooth.RadBeacon;
+import com.amazon.alexa.avs.bluetooth.RadBeacon.RadBeaconId;
+
+import java.time.*;
+
+public class BlueScan2 extends BeaconAdvertEventHandler {
+	BluetoothManager manager;
+	String mac;
+	private List<EventListener> listeners;
+	Timer timer;
+	boolean devicePresent, firstRep;
+	private final int endAfterNumEvents = 30;
+
+    private int numEventsSeen = 0;
+
+	public BlueScan2(RadBeaconId myDevice, int hciDeviceNum, long interval) {
+		super(myDevice, hciDeviceNum, interval);
+		manager = BluetoothManager.getBluetoothManager();
+		listeners = new ArrayList<EventListener>();
+		devicePresent = false;
+		firstRep = true;
+	}
+
+	@Override
+	public void handleRadBeaconEvent(RadBeacon radBeacon) {
+		System.out.println("Radbeacon Recieved");
+		System.out.println("Proximity Power" + radBeacon.getBeaconProximityPower());
+		System.out.println("Device Addr" + radBeacon.getDeviceAddr());
+		System.out.println("Battery Power" + radBeacon.getRadBeaconBatteryPower());
+		System.out.println("Rssi" + radBeacon.getRssi());
+		System.out.println("");
+	}
+
+	public void addListener(EventListener toAdd) {
+		listeners.add(toAdd);
+	}
+	
+	public void sendPresent(int currRSSI, int trueRSSI) {
+		for (EventListener b : listeners) {
+			b.bluetoothPresent(currRSSI, trueRSSI);
+		}
+	}
+	
+	public void sendAbsent(int currRSSI) {
+		for (EventListener b : listeners) {
+			b.bluetoothAbsent(currRSSI);
+		}
+	}
+	
+}

@@ -1,0 +1,29 @@
+.dark-text {
+  color: black;
+  border-color: black;
+}
+
+.dark-h1 {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: black;
+}
+#skillswrapwhite {
+	background: white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: white;
+}
+
+#skillswrapwhite h5{
+	color: black;
+}
+
+#skillswrapwhite p{
+	color: black;
+}
+
+.noMargBot {
+	margin-bottom:0px;
+}
