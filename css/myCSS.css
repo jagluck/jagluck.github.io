@@ -31,3 +31,22 @@
 .big-pics {
 	font-size:20px;
 }
+
+@media (min-width: 1151px) { 
+	.add-space{
+		margin-bottom:50px;
+	}
+}
+
+@media (max-width: 1151px) { 
+	.has-link{
+		margin-bottom:50px;
+	}
+	.hide-bar{
+		visibility:hidden;
+	}
+}
+
+.whitetext {
+	color: white;
+}

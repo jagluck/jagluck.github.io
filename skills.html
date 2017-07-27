@@ -107,11 +107,11 @@
     <!--SKILLS DESCRIPTION -->
     <div id="skillswrap">
         <div class="container">
-            <div class="row">
-                    <div class="col-lg-2 col-lg-offset-1">
+            <div class="row add-space">
+                    <div class="col-lg-2 col-lg-offset-0">
                         <h5>LANGAUGES</h5>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="java" height="130" width="130"></canvas>
                         <p>Java</p>
                         <br>
@@ -129,7 +129,7 @@
                                 var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="clang" height="130" width="130"></canvas>
                         <p>C</p>
                         <br>
@@ -147,10 +147,10 @@
                                 var myDoughnut = new Chart(document.getElementById("clang").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered has-link">
                         <canvas id="html" height="130" width="130"></canvas>
                         <p>HTML/CSS</p>
-                        <br>
+                        <a class = "whitetext" href = "https://github.com/jagluck/personalsite">This Websites code</a>
                         <script>
                             var doughnutData = [
                                     {
@@ -166,7 +166,25 @@
                         </script>
                     </div>
                     
-                    <div class="col-lg-3 col-lg-offset-3 centered">
+                    <div class="col-lg-2 centered">
+                        <canvas id="php" height="130" width="130"></canvas>
+                        <p>PHP</p>
+                        <a class = "whitetext" href = "https://github.com/jagluck/GroupMe-Counter">PHP script for groupme</a>
+                        <script>
+                            var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#1abc9c"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#ecf0f1"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("php").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                    <div class="col-lg-2 centered">
                         <canvas id="javascript" height="130" width="130"></canvas>
                         <p>JavaScript</p>
                         <br>
@@ -184,25 +202,12 @@
                                 var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
-                        <canvas id="ruby" height="130" width="130"></canvas>
-                        <p>Ruby</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 60,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 40,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("ruby").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                    </div>
-                    <div class="col-lg-3 centered">
+
+            </div>
+            <hr class = "add-space hide-bar">
+            <div class="row">
+
+                    <div class="col-lg-2 col-lg-offset-3 centered">
                         <canvas id="ocaml" height="130" width="130"></canvas>
                         <p>OCaml</p>
                         <br>
@@ -223,25 +228,25 @@
                     
 
 
-                     <div class="col-lg-3 col-lg-offset-3 centered">
-                        <canvas id="php" height="130" width="130"></canvas>
-                        <p>PHP</p>
+                     <div class="col-lg-2 centered">
+                        <canvas id="ruby" height="130" width="130"></canvas>
+                        <p>Ruby</p>
                         <br>
                         <script>
                             var doughnutData = [
                                     {
-                                        value: 75,
+                                        value: 60,
                                         color:"#1abc9c"
                                     },
                                     {
-                                        value : 25,
+                                        value : 40,
                                         color : "#ecf0f1"
                                     }
                                 ];
-                                var myDoughnut = new Chart(document.getElementById("php").getContext("2d")).Doughnut(doughnutData);
+                                var myDoughnut = new Chart(document.getElementById("ruby").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="prolog" height="130" width="130"></canvas>
                         <p>Prolog</p>
                         <br>
@@ -259,7 +264,7 @@
                                 var myDoughnut = new Chart(document.getElementById("prolog").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="assembly" height="130" width="130"></canvas>
                         <p>Assembly</p>
                         <br>
@@ -285,11 +290,11 @@
 
     <div id="skillswrapwhite">
         <div class="container">
-            <div class="row">
-                    <div class="col-lg-2 col-lg-offset-1">
+            <div class="row add-space">
+                    <div class="col-lg-2 col-lg-offset-0">
                         <h5>SKILLS</h5>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered has-link">
                         <canvas id="bootstrap" height="130" width="130"></canvas>
                         <p>Bootstrap</p>
                         <br>
@@ -307,28 +312,28 @@
                                 var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
-                        <canvas id="jquery" height="130" width="130"></canvas>
-                        <p>JQuery</p>
-                        <br>
+                    <div class="col-lg-2 centered has-link">
+                        <canvas id="Android Studio" height="130" width="130"></canvas>
+                        <p>Android Studio</p>
+                        <a href = "https://github.com/jaygrl216/MSApp">Final Mobile Development Project</a>
                         <script>
                             var doughnutData = [
                                     {
-                                        value: 70,
+                                        value: 75,
                                         color:"#1abc9c"
                                     },
                                     {
-                                        value : 30,
+                                        value : 25,
                                         color : "#ecf0f1"
                                     }
                                 ];
-                                var myDoughnut = new Chart(document.getElementById("jquery").getContext("2d")).Doughnut(doughnutData);
+                                var myDoughnut = new Chart(document.getElementById("Android Studio").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered has-link">
                         <canvas id="git" height="130" width="130"></canvas>
                         <p>Git</p>
-                        <br>
+                        <a href = "https://github.com/jagluck">My Github Account</a>
                         <script>
                             var doughnutData = [
                                     {
@@ -346,28 +351,28 @@
                     
                    
 
-                    <div class="col-lg-3 centered">
-                        <canvas id="aws" height="130" width="130"></canvas>
-                        <p>Amazon Web Services</p>
-                        <br>
+                    <div class="col-lg-2 centered has-link">
+                        <canvas id="d3" height="130" width="130"></canvas>
+                        <p>D3.js</p>
                         <script>
                             var doughnutData = [
                                     {
-                                        value: 85,
+                                        value: 60,
                                         color:"#1abc9c"
                                     },
                                     {
-                                        value : 15,
+                                        value : 40,
                                         color : "#ecf0f1"
                                     }
                                 ];
-                                var myDoughnut = new Chart(document.getElementById("aws").getContext("2d")).Doughnut(doughnutData);
+                                var myDoughnut = new Chart(document.getElementById("d3").getContext("2d")).Doughnut(doughnutData);
                         </script>
+                        <a href = "snow.html">Snow Demo</a>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered has-link">
                         <canvas id="sql" height="130" width="130"></canvas>
                         <p>SQL</p>
-                        <br>
+                        <a href = "https://github.com/mjschleckser/DAGR_database">Final Database Design Project</a>
                         <script>
                             var doughnutData = [
                                     {
@@ -382,29 +387,34 @@
                                 var myDoughnut = new Chart(document.getElementById("sql").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
-                        <canvas id="Android Studio" height="130" width="130"></canvas>
-                        <p>Android Studio</p>
+
+            </div>
+            <hr class = "add-space hide-bar">
+            <div class="row">
+
+                    <div class="col-lg-2 col-lg-offset-1 centered">
+                        <canvas id="jquery" height="130" width="130"></canvas>
+                        <p>JQuery</p>
                         <br>
                         <script>
                             var doughnutData = [
                                     {
-                                        value: 75,
+                                        value: 70,
                                         color:"#1abc9c"
                                     },
                                     {
-                                        value : 25,
+                                        value : 30,
                                         color : "#ecf0f1"
                                     }
                                 ];
-                                var myDoughnut = new Chart(document.getElementById("Android Studio").getContext("2d")).Doughnut(doughnutData);
+                                var myDoughnut = new Chart(document.getElementById("jquery").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
 
 
 
 
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="websockets" height="130" width="130"></canvas>
                         <p>Websockets</p>
                         <br>
@@ -422,7 +432,7 @@
                                 var myDoughnut = new Chart(document.getElementById("websockets").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="REST" height="130" width="130"></canvas>
                         <p>REST</p>
                         <br>
@@ -440,7 +450,7 @@
                                 var myDoughnut = new Chart(document.getElementById("REST").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="Elastic Search" height="130" width="130"></canvas>
                         <p>Elastic Search</p>
                         <br>
@@ -459,7 +469,7 @@
                         </script>
                     </div>
 
-                     <div class="col-lg-3 centered">
+                     <div class="col-lg-2 centered">
                         <canvas id="UNIX" height="130" width="130"></canvas>
                         <p>UNIX</p>
                         <br>
@@ -477,7 +487,12 @@
                                 var myDoughnut = new Chart(document.getElementById("UNIX").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+
+            </div>
+            <hr class = "add-space hide-bar">
+            <div class="row">
+
+                    <div class="col-lg-2 col-lg-offset-2 centered">
                         <canvas id="Maven" height="130" width="130"></canvas>
                         <p>Maven</p>
                         <br>
@@ -495,7 +510,7 @@
                                 var myDoughnut = new Chart(document.getElementById("Maven").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="curl" height="130" width="130"></canvas>
                         <p>cULR</p>
                         <br>
@@ -514,7 +529,7 @@
                         </script>
                     </div>
 
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="Jetty" height="130" width="130"></canvas>
                         <p>Jetty</p>
                         <br>
@@ -532,7 +547,7 @@
                                 var myDoughnut = new Chart(document.getElementById("Jetty").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="JSON" height="130" width="130"></canvas>
                         <p>JSON</p>
                         <br>
@@ -550,7 +565,7 @@
                                 var myDoughnut = new Chart(document.getElementById("JSON").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="Adobe Photoshop" height="130" width="130"></canvas>
                         <p>Adobe Photoshop</p>
                         <br>
@@ -568,8 +583,11 @@
                                 var myDoughnut = new Chart(document.getElementById("Adobe Photoshop").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
+            </div>
+            <hr class = "add-space hide-bar">
+            <div class="row">
 
-                     <div class="col-lg-3 centered">
+                     <div class="col-lg-2 col-lg-offset-1 centered">
                         <canvas id="Adobe Illustrator" height="130" width="130"></canvas>
                         <p>Adobe Illustrator</p>
                         <br>
@@ -587,7 +605,7 @@
                                 var myDoughnut = new Chart(document.getElementById("Adobe Illustrator").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-3 centered">
+                    <div class="col-lg-2 centered">
                         <canvas id="pi" height="130" width="130"></canvas>
                         <p>Raspberry Pi</p>
                         <br>
@@ -603,6 +621,24 @@
                                     }
                                 ];
                                 var myDoughnut = new Chart(document.getElementById("pi").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                    <div class="col-lg-2 centered">
+                        <canvas id="aws" height="130" width="130"></canvas>
+                        <p>Amazon Web Services</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                    {
+                                        value: 85,
+                                        color:"#1abc9c"
+                                    },
+                                    {
+                                        value : 15,
+                                        color : "#ecf0f1"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("aws").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
             </div><!--/.row -->
