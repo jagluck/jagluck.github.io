@@ -91,7 +91,7 @@
 
         <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header noMargBot" style="background-image: url('img/umd1.jpg')">
+    <header class="intro-header noMargBot" style="background-color:lightgray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -129,22 +129,22 @@
                                 var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                    <div class="col-lg-2 centered">
-                        <canvas id="clang" height="130" width="130"></canvas>
-                        <p>C</p>
-                        <br>
+                    <div class="col-lg-2 centered has-link">
+                         <canvas id="javascript" height="130" width="130"></canvas>
+                        <p>JavaScript</p>
+                        <a class = "whitetext" href = "https://github.com/jagluck/City-Skyline">Processing.js Building Project</a>
                         <script>
                             var doughnutData = [
                                     {
-                                        value: 75,
+                                        value: 70,
                                         color:"#1abc9c"
                                     },
                                     {
-                                        value : 25,
+                                        value : 30,
                                         color : "#ecf0f1"
                                     }
                                 ];
-                                var myDoughnut = new Chart(document.getElementById("clang").getContext("2d")).Doughnut(doughnutData);
+                                var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
                     <div class="col-lg-2 centered has-link">
@@ -185,21 +185,21 @@
                         </script>
                     </div>
                     <div class="col-lg-2 centered">
-                        <canvas id="javascript" height="130" width="130"></canvas>
-                        <p>JavaScript</p>
+                        <canvas id="clang" height="130" width="130"></canvas>
+                        <p>C</p>
                         <br>
                         <script>
                             var doughnutData = [
                                     {
-                                        value: 70,
+                                        value: 75,
                                         color:"#1abc9c"
                                     },
                                     {
-                                        value : 30,
+                                        value : 25,
                                         color : "#ecf0f1"
                                     }
                                 ];
-                                var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                                var myDoughnut = new Chart(document.getElementById("clang").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
 
