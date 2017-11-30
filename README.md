@@ -1,6 +1,6 @@
 # Jake Gluck
 
-View site at https://rawgit.com/jagluck/personalsite/master/index.html
+View site at https://goo.gl/mjGnWh
 
 Sources
 
