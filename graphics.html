@@ -15,7 +15,6 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
     <link href="css/myCSS.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -23,10 +22,21 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-     <!--Resume Fonts-->
+    <!-- Resume Styles  -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    
+    <link href="css/clean-blog-stripped.css" rel="stylesheet">
+    
+    <!--Resume Fonts-->
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+    <script src="assets/js/Chart.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,9 +47,13 @@
 
 </head>
 
-<body>
 
-      <!-- Navigation -->
+
+  <body data-spy="scroll" data-offset="0" data-target="#nav">
+
+    
+
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -60,13 +74,13 @@
                         <a href="resume.html">Resume</a>
                     </li>
                      <li>
-                        <a href="skills.html">Technical Skills & Projects</a>
+                         <a href="graphics.html">Graphics</a>
                     </li>
                     <li>
                         <a href="radio.html">Radio</a>
                     </li>
                     <li>
-                        <a href="columns.html">Journalism</a>
+                        <a href="articles.html">Articles</a>
                     </li>
                 </ul>
             </div>
@@ -75,16 +89,16 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Header -->
+
+        <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-color:lightgray">
+    <header class="intro-header noMargBot" style="background-color:lightgray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1 class = "dark-text">Journalism</h1>
+                        <h1 class = "dark-text">JavaScript Graphics</h1>
                         <hr class="dark-h1">
-                        <span class="subheading dark-text">Columns, Satirical publications, Photos, and Informational Javascript Projects</span>
                     </div>
                 </div>
             </div>
@@ -95,52 +109,31 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p style ="color:#333;font-size: 20px">Some examples of JavaScript graphics I have worked on. Please visit my <a href="https://github.com/jagluck/">Github</a> to view non graphic code examples.</p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
                 <div class="post-preview">
-                    <a href="https://wtop.com/mlb/2017/11/major-league-baseball-players-prefer-hip-hop-songs-get-pumped/slide/1/">
+                    <a href="snow.html">
                         <h2 class="post-title">
-                            Major League Baseball players prefer hip-hop songs to get pumped up
+                            D3 Snow Art
                         </h2>
                         <h3 class="post-subtitle">
-                            WTOP
+                            Fun art project, displays endless snowfall
                         </h3>
                     </a>
-                    <p class = "post-meta"> November 1st 2017 </p>
                 </div>
-                <div class="post-preview">
-                    <a href="http://wmucradio.tumblr.com/post/165816274120/review-dent-may-songbyrd-music-house">
-                        <h2 class="post-title">
-                            Review: Dent May @ Songbyrd Music House
-                        </h2>
-                        <h3 class="post-subtitle">
-                            WMUC Blog
-                        </h3>
-                    </a>
-                    <p class = "post-meta"> September 27th 2017 </p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="http://wmucradio.tumblr.com/post/163368168510/qa-with-magnus-who-lives-in-the-basement">
-                        <h2 class="post-title">
-                            Q&A with Magnus Who Lives in The Basement
-                        </h2>
-                        <h3 class="post-subtitle">
-                            WMUC Blog
-                        </h3>
-                    </a>
-                    <p class = "post-meta"> July 24th 2017 </p>
-                </div>
-                <hr>
             </div>
         </div>
     </div>
-
+    
     <hr>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 big-pics">
                     <ul class="list-inline text-center">
                         <li>
                             <a href="https://twitter.com/jakegluck">
@@ -165,19 +158,11 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-
-</body>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
 </html>
