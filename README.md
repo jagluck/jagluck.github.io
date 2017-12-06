@@ -1,6 +1,6 @@
 # Jake Gluck
 
-View site at https://goo.gl/mjGnWh
+View site at https://jagluck.github.io
 
 Sources
 
